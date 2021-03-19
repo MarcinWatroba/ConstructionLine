@@ -1,3 +1,11 @@
+# My solution and thoughts
+
+This is my attempt for this search engine. I believe code could be better organised, so if I had an opportunity to spend more time on it (was quite busy today) I would ensure quality would be better.
+
+One observation is that for some reason performance test fails due to expecting quantity of blue shirts. Although in the performance test blue shirts are not searched for. This was confusing me a bit and caused me to spend some more time on the challenge. I did test it with quantity of all shirts being given (even the ones that were not searched), performance test succedded then. However the normal simple test failed because it expected quantity to be 0 for shirts that were not searched. 
+
+I left the program to not include quantities of shirts that weren't searched as this was the requirement spec. Getting rid of "if (options.Colors.Contains(color))" in the search engine class ensures that quantities of all shirts are provided, even ones that were not searched.
+
 # Construction Line code challenge
 
 The code challenge consists in the implementation of a simple search engine for shirts.
