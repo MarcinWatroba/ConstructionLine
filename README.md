@@ -1,3 +1,7 @@
+Got following results for the performance test when just searched for red shirts. I would assume that based on requirements this is the correct result. First number is quantity of shirts returned. Then quantities of matched sizes based on size/colour condition, then quantities of matched colours based on the same condition. Assert fails saying that blue shirts quantity should also be given.
+
+![image](https://user-images.githubusercontent.com/24981173/111824037-95f5dc80-88dd-11eb-8b1b-68337ecebb71.png)
+
 # My solution and thoughts
 
 This is my attempt for this search engine. I believe code could be better organised, so if I had an opportunity to spend more time on it (was quite busy today) I would ensure quality would be better.
