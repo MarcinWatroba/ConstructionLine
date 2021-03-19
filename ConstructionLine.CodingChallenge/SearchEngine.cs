@@ -135,7 +135,7 @@ namespace ConstructionLine.CodingChallenge
             {
                 foreach (SizeGroup size in _shirtSizeGroup.Values)
                 {
-                    quantity += (size.Colors.ContainsKey(color)) ? size.Colors[color].Shirts.Count : 0;
+                    quantity += size.Colors[color].Shirts.Count;
                 }
             }
 
@@ -190,8 +190,6 @@ namespace ConstructionLine.CodingChallenge
             List <Shirt> shirtsFound = new List<Shirt>();
             List<SizeCount> shirtsOfSize = GetShirtsOfSize(options);
             List<ColorCount> shirtsOfColor = GetShirtsOfColour(options);
-
-            Console.WriteLine(shirtsOfColor);
 
             foreach (Size size in options.Sizes)
             {
